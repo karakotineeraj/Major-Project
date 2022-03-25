@@ -16,4 +16,5 @@ urlpatterns = [
     path('api/add-exit',view.exit_details),
     path('api/search-vehicle',view.search_vehicle),
     path('api/get-details',view.get_details),
+    path('delete/<num>/', view.delete_vehicle_entry),
 ]

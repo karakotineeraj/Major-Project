@@ -1,5 +1,5 @@
 import re
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework import serializers
 
 from .models import Members,Vehicles
@@ -261,3 +261,9 @@ def get_details(request):
         data = []
     return Response(data)
 
+
+
+def delete_vehicle_entry(request, num):
+    obj = Members.objects.filter(car_number = num)
+    obj.delete()
+    return redirect('member')

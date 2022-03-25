@@ -51,6 +51,8 @@ function get_members_data(){
                         <td><a href="mailto:${list[i].email_id}">${list[i].email_id}</a></td>
                         <td>${list[i].flat_address}</td>
                         <td>${list[i].date_added}</td>
+                        <td><a href="/delete/${list[i].car_number}" class="btn btn-danger">Delete</a></td>
+
                     </tr>
                 `
                 table.innerHTML+=car;
