@@ -1,0 +1,109 @@
+@font-face {
+    font-family: primary;
+    src: url("primary.ttf");
+}
+@font-face {
+    font-family: secondary;
+    src: url("secondary.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: secondary;
+}
+.heading{
+    font-family: primary;
+    font-weight: bold;
+}
+.logo .heading{
+    font-size: 32px;
+}
+a{
+    text-decoration: none!important;
+}
+#navbar a{
+    color: #fefefe!important;
+}
+#navbar .menu-items div{
+    line-height: 72.5px;
+}
+.button{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(66, 133, 244);
+    color: #fefefe!important;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px 30px rgba(66, 134, 244, 0.3);
+}
+#serachMemberBtn{
+    background-color: transparent;
+    border: 2px solid #fefefe;
+    line-height: normal;
+}
+.member-vehicle-false{
+    background-color: rgb(243, 64, 64);
+    color: #fefefe;
+}
+#entry-alert, #exit-alert{
+    display: none;
+}
+#alert-text{
+    width: 50vw;
+    height: 44px;
+    text-align: center;
+    line-height: 50px;
+    color: #fefefe;
+    background-color: rgb(243, 64, 64);
+    border-radius: 10px;
+    animation: fade-in 1s ease-in-out infinite alternate;
+}
+@keyframes fade-in{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#alert-text h4{
+    line-height: 44px;
+}
+
+
+.msg{
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40vw;
+    height: 40px;
+    line-height: 40px;
+    background-color: #6dfa9c;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 2s ease-in-out;
+    z-index: 100;
+}
+#error-msg{
+    background-color: rgb(253, 42, 42);
+}
+.mem-data{
+    background-color: #4285f4;
+    border-radius: 5px;
+    box-shadow: 0 6px 30px rgba(66, 66, 66, 0.1);
+    color: #fefefe!important;
+}
+.mem-data a{
+    color: #fefefe!important;
+    font-weight: bolder;
+}
+
+.border-btn{
+    border: 2px solid #4285f4;
+    color: #4285f4!important;
+    background-color: transparent;
+    box-shadow: none;
+}
