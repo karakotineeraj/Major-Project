@@ -1,0 +1,446 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cnt",
+				"cnt1"
+			],
+			[
+				"mo",
+				"monthly"
+			],
+			[
+				"mon",
+				"monthly"
+			],
+			[
+				"e",
+				"earning"
+			],
+			[
+				"cu",
+				"curr1"
+			],
+			[
+				"m",
+				"monthlyExpenses"
+			],
+			[
+				"c",
+				"currYear"
+			],
+			[
+				"ba",
+				"baseMatrix"
+			],
+			[
+				"fi",
+				"firstHalf"
+			],
+			[
+				"se",
+				"secondHalf"
+			],
+			[
+				"bas",
+				"baseMatrix"
+			],
+			[
+				"b",
+				"baseMatrix"
+			],
+			[
+				"get",
+				"getVal"
+			],
+			[
+				"prin",
+				"printSubsequences"
+			],
+			[
+				"pr",
+				"printSubsequences"
+			],
+			[
+				"pri",
+				"printSubsequences"
+			],
+			[
+				"p",
+				"push"
+			],
+			[
+				"ke",
+				"keys"
+			],
+			[
+				"al",
+				"alphabet"
+			],
+			[
+				"do",
+				"double"
+			],
+			[
+				"st",
+				"stockPrice"
+			],
+			[
+				"si",
+				"SieveOfEratosthenes"
+			],
+			[
+				"prim",
+				"primes"
+			],
+			[
+				"lo",
+				"LongestIncreasingSubsequenceLength"
+			],
+			[
+				"cub",
+				"perfectCube"
+			],
+			[
+				"per",
+				"isPerfectSquare"
+			],
+			[
+				"num",
+				"numofwordsB"
+			],
+			[
+				"bagofwo",
+				"bagofwords"
+			],
+			[
+				"bag",
+				"bagofwordsB"
+			],
+			[
+				"numo",
+				"numofwordsB"
+			],
+			[
+				"uniqueW",
+				"uniquewords"
+			],
+			[
+				"re",
+				"result2"
+			],
+			[
+				"con",
+				"convert"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"res",
+				"res_r"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"so",
+				"snow"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"pa",
+				"password-reset"
+			],
+			[
+				"be",
+				"beginend"
+			],
+			[
+				"Ma",
+				"MACRO"
+			],
+			[
+				"pu",
+				"push_back"
+			],
+			[
+				"sc",
+				"score"
+			],
+			[
+				"pus",
+				"push_back"
+			],
+			[
+				"di",
+				"digitSum"
+			],
+			[
+				"sen",
+				"sentence_tokenize"
+			],
+			[
+				"wi",
+				"weight"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jatin/Documents/cp/cal.cpp",
+		"/home/jatin/Documents/cp/base_template.cpp",
+		"/home/jatin/Documents/cp/6.txt",
+		"/home/jatin/Documents/cp/5.txt",
+		"/home/jatin/Documents/cp/4.txt",
+		"/home/jatin/Documents/cp/3.txt",
+		"/home/jatin/Documents/cp/2.txt",
+		"/home/jatin/Documents/cp/temp.cpp",
+		"/home/jatin/temp_proj",
+		"/home/jatin/.config/sublime-text/Packages/User/cp.sublime-build",
+		"/home/jatin/Documents/cp/outpu.txt",
+		"/home/jatin/Documents/cp/input.txt",
+		"/home/jatin/Documents/cp/output1.txt",
+		"/home/jatin/Documents/cp/SID_BST.cpp",
+		"/home/jatin/Documents/cp/output.txt",
+		"/home/jatin/Documents/nlp/expt1213.py",
+		"/home/jatin/.config/sublime-text/Packages/User/CP.sublime-build",
+		"/home/jatin/Documents/cp/untitled",
+		"/home/jatin/Documents/cp/main.cpp",
+		"/home/jatin/Desktop/artificial_inteligence_simulations/aritificial_intelligence_simulations/.gitignore",
+		"/home/jatin/Desktop/artificial_inteligence_simulations/aritificial_intelligence_simulations/requirements.txt",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/templates/app/bot_home.html",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/templates/app/app_base.html",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/templates/app/base.html",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/templates/app/signup.html",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/templates/app/login.html",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/templates/app/services.html",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/aritificial_intelligence_simulations/settings.py",
+		"/home/jatin/Documents/git token",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/README.md",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/aritificial_intelligence_simulations/urls.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/static/app/Css/master.css",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/static/app/Script/master.js",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/migrations/0001_initial.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/views.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/apps.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/new/apps.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/templates/base.html",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/urls.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/app/static/app/Css/app_master.css",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/aritificial_intelligence_simulations/asgi.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/manage.py",
+		"/home/jatin/Desktop/Aritficial_intelligence_simulations/artificial_inteligence_simulations/aritificial_intelligence_simulations/aritificial_intelligence_simulations/wsgi.py",
+		"/home/jatin/Desktop/BOTMAN/MrBot/MrBot/urls.py",
+		"/home/jatin/Desktop/BOTMAN/MrBot/templates/services.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/templates/bot_home.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/templates/base.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/static/Css/master.css",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/static/accounts/Css/accounts_master.css",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/templates/accounts/accounts_base.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/templates/accounts/login.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/templates/accounts/signup.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/urls.py",
+		"/home/jatin/Desktop/BOTMAN/MrBot/MrBot/settings.py",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/templates/accounts/password_reset_done.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/templates/accounts/password_reset_confirm.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/templates/accounts/password_reset.html",
+		"/home/jatin/Desktop/BOTMAN/MrBot/accounts/static/accounts/Script/accounts_master.js",
+		"/home/jatin/Documents/nlp/expt67.py",
+		"/home/jatin/Documents/nlp/expt345.py",
+		"/home/jatin/*/Dev/REST/tutorial/tutorial/tutorial/settings.py",
+		"/home/jatin/*/Dev/REST/Requirements",
+		"/home/jatin/Documents/nlp/nlp.py",
+		"/home/jatin/Documents/cp/CP"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 107.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/cp.sublime-build",
+	"project": "serializers.cpython-39.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

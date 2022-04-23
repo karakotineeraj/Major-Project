@@ -264,6 +264,11 @@ def get_details(request):
 
 
 def delete_vehicle_entry(request, num):
-    obj = Members.objects.filter(car_number = num)
-    obj.delete()
+    if(Members.objects.filter(car_number=num).exists() == True):
+        obj = Members.objects.filter(car_number = num)
+        obj.delete()
+
+    if(Vehicles.objects.filter(car_number=num).exists() == True):
+        ovj = Vehicles.objects.filter(car_number=num)
+        ovj.delete()
     return redirect('member')
