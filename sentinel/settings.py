@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'ai',
     'rest_framework',
     'crispy_forms',
+    'django_twilio',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -142,3 +143,9 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Twilio settings
+TWILIO_ACCOUNT_SID = 'ACe781a70b9fbb21305530ed25b9bde22e'
+TWILIO_AUTH_TOKEN = '7e9121d9d111c492a2bf2dbd6d680b51'
+TWILIO_PHONE_NUMBER = '+15073352302'

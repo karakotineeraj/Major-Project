@@ -19,9 +19,10 @@ import json
 
 import os
 from twilio.rest import Client
+from django.conf import settings
 
-account_sid = 'ACf2830af164b92a0eeefcb20f3325a3ec'
-auth_token = 'f19390382523e3b7d58eaf15872b2d1d'
+account_sid = settings.TWILIO_ACCOUNT_SID
+auth_token = settings.TWILIO_AUTH_TOKEN
 client = Client(account_sid, auth_token)
 
 # Create your views here.
@@ -48,7 +49,7 @@ def vehicle_details(request):
 def send_sms(msg,to):
     message = client.messages.create(
                      body=msg,
-                     from_='+18029928454',
+                     from_= settings.TWILIO_PHONE_NUMBER,
                      to=to
                  )
     return message.sid
@@ -59,7 +60,7 @@ def send_sms(msg,to):
 @api_view(['GET'])
 def get_members(request):
     members = Members.objects.all()
-    serializer = memberSerializer(members,many  =True)
+    serializer = memberSerializer(members,many = True)
     return Response(serializer.data)
 
 @api_view(['GET'])
@@ -129,10 +130,20 @@ def get_state(number_plate):
 
 def send_entry_message(number_plate):
     print("\n You are welcome enter here \n")
+    time = datetime.now().time()
+    tim = str(time)
+    message = "You are Welcome entring at " + tim + " !"
+    phone = '+919910139377'
+    send_sms(message, phone)
 
 
 def send_exit_message(number_plate):
     print("\n You can go now \n")
+    time = datetime.now().time()
+    tim = str(time)
+    message = "You are Leaving at " + tim + " !"
+    phone = '+919910139377'
+    send_sms(message, phone)
 
 # This function will be called after scanning
 # When we get the number_plate number
