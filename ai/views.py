@@ -1,12 +1,15 @@
 import re
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from rest_framework import serializers
+from django.contrib import messages
 
 from .models import Members,Vehicles
 from .serializers import memberSerializer,vehicleSerializer
 from rest_framework.decorators import action, api_view
 from rest_framework.response import Response
 
+from .forms import UserCreateFrom
+from datetime import datetime
 
 from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
@@ -80,6 +83,8 @@ def check_member(number):
 
 @api_view(['POST'])
 def get_image(request):
+
+    print("\nGet Image function called here we will get the plate number from the image\n")
     data = request.data
 
     payload = { 'isOverlayRequired':True,
@@ -93,14 +98,89 @@ def get_image(request):
     data=payload,
     )
 
-    # print(r.content.decode())
+
+    print(r.content.decode())
     number = json.loads(r.content.decode())
     number_plate = number['ParsedResults'][0]['TextOverlay']['Lines'][0]['Words'][0]['WordText']
-    print(number_plate)
+    print(" Plate number : " + number_plate)
+
+    print("\n\n Ab to chle ja \n\n")
+    text = "Displaying article Number"
+    return render(request,'ai/members.html')
+
+    print("\n\n After redirect\n\n")
 
     permission = check_member(number_plate)
 
+    print("\n\n Reached Here: Got the number  \n\n")
     return Response({"permission":permission,"number":number_plate})
+
+
+def get_state(number_plate):
+    obj = Members.objects.get(car_number=number_plate)
+    print(obj)
+    if(obj.exit_allow == True):
+        obj.exit_allow = False
+        obj.save()
+        return "exit"
+    obj.exit_allow = True
+    obj.save()
+    return "entry"
+
+def send_entry_message(number_plate):
+    print("\n You are welcome enter here \n")
+
+
+def send_exit_message(number_plate):
+    print("\n You can go now \n")
+
+# This function will be called after scanning
+# When we get the number_plate number
+def after_scan(request, number_platee):
+
+    if registered_user_or_not(number_platee) == False:
+        print("\nuser doesn't exists lets create one\n")
+        return register_new_user(request, number_platee)
+
+    # State will tell whether user wants to enter or leave the complex
+    state = get_state(number_platee)
+
+    if state == "exit":
+        send_exit_message(number_platee)
+        # log_entry("exit", number_platee)
+        messages.success(request, "Exit Allowed!")
+
+    elif state == "entry":
+        send_entry_message(number_platee)
+        # log_entry("entry", number_platee)
+        messages.success(request, "Entry Allowed")
+
+    return redirect('/')
+
+
+def register_new_user(request, number_platee):
+    if request.method == 'POST':
+        form = UserCreateFrom(request.POST)
+
+        if form.is_valid():
+            obj = form.save(commit=False)
+            obj.car_number = number_platee
+            obj.date_added = datetime.now().date()
+            obj.exit_allow = True
+            obj.save()
+
+            return redirect('member')
+    else:
+        form = UserCreateFrom()
+
+    return render(request, 'ai/register.html', {'form':form})
+
+
+
+# Function to check if the user is already registered or not
+def registered_user_or_not(number_plate):
+    return Members.objects.filter(car_number=number_plate).exists();
+
 
 
 @api_view(['POST'])

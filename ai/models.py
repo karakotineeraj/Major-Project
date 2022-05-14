@@ -5,7 +5,7 @@ from django.db.models.fields import BooleanField
 class Members(models.Model):
     owner = models.CharField(max_length=20,blank=False,null=False,default='member')
     flat_address = models.CharField(max_length=50,blank=False,null=False,default='abc')
-    car_number = models.CharField(max_length=15,blank=False,null=False,default='abc12')
+    car_number = models.CharField(max_length=15,blank=False,null=False,default='abc12', unique=True)
     phone_number = models.CharField(max_length=15,blank=True)
     email_id = models.EmailField(blank=True)
     date_added = models.DateField(auto_now_add=False,blank=True,null=True)
@@ -31,3 +31,7 @@ class Vehicles(models.Model):
 
     def __str__(self):
         return self.car_number
+
+
+# class Log(models.Model):
+#     

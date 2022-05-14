@@ -49,19 +49,26 @@
 
   <!-- Navbar End -->
 
+    {% for message in messages %}
+        <script>
+            // <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            alert("So its working\n");
+            alert({{ message }});
+        </script>
+    {% endfor %}
 
 <!-- video -->
 <div class="row m-0 mt-5">
-    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left">
-        <h3 class="heading">Entry Gate</h3>
-        <Video id="entry_video"  width="640" height="480"  autoplay></Video><br>
+    <div class="text-center" style="margin: 0 auto;">
+        <h3 class="heading">Gate Entrance</h3>
+        <Video id="entry_video"  width="640" height="480" autoplay style="border: 10px solid black;  width: 800px; height: 500px;"></Video><br>
         <button data-toggle="modal" data-target="#entryImgModal" id="entry-snap" class="button">Snap photo</button>
     </div>
-    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+   <!--  <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
         <h3 class="heading">Exit Gate</h3>
         <Video id="exit_video" width="640" height="480" autoplay></Video>
         <button data-toggle="modal" data-target="#exitImgModal" id="exit-snap" class="button">Snap photo</button>
-    </div>
+    </div> -->
 </div>
 
 <!-- alert sound -->
