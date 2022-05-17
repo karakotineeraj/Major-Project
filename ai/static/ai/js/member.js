@@ -1,21 +1,20 @@
-
-
-    // CSRF TOKEN
-    function getCookie(name) {
-        var cookieValue = null;
-        if (document.cookie && document.cookie !== '') {
-            var cookies = document.cookie.split(';');
-            for (var i = 0; i < cookies.length; i++) {
-                var cookie = cookies[i].trim();
-                // Does this cookie string begin with the name we want?
-                if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                    break;
-                }
+// CSRF TOKEN
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
             }
         }
-        return cookieValue;
     }
+    return cookieValue;
+}
+
 csrf_token = getCookie('csrftoken')
 
 // get members data
@@ -169,7 +168,7 @@ function search_member(e){
 }
 
 window.onload = ()=>{
-        get_members_data()
-        document.getElementById('addMemberBtn').addEventListener('click',add_members_entry)
-        document.getElementById('serachMemberBtn').addEventListener('click',search_member)
-    };
+    get_members_data()
+    document.getElementById('addMemberBtn').addEventListener('click',add_members_entry)
+    document.getElementById('serachMemberBtn').addEventListener('click',search_member)
+};

@@ -5,16 +5,16 @@
     <link rel="stylesheet" href="{% static 'ai/css/index.css' %}">
 {% endblock %}
 
-{% block page_title %} <title>AI Sentinel</title>  {% endblock %}
+{% block page_title %} <title>Automated Parking System</title>  {% endblock %}
 
 {% block container %}
 
 <!-- Navbar -->
-<div class="row m-0 bg-primary justify-content-between" id="navbar">
+<div class="row m-0 bg-info justify-content-between" id="navbar">
     <div class="logo m-2 ml-5">
         <a href="/">
             <img src="{% static 'ai/assets/as-logo.png' %}" alt="as logo" style="width: 65px;">
-            <span class="heading">AI Sentinel</span>
+            <span class="heading">Automated Parking System</span>
         </a>
     </div>
     <div class="menu-items d-flex mr-5" >
@@ -62,7 +62,7 @@
     <div class="text-center" style="margin: 0 auto;">
         <h3 class="heading">Gate Entrance</h3>
         <Video id="entry_video"  width="640" height="480" autoplay style="border: 10px solid black;  width: 800px; height: 500px;"></Video><br>
-        <button data-toggle="modal" data-target="#entryImgModal" id="entry-snap" class="button">Snap photo</button>
+        <button data-toggle="modal" data-target="#entryImgModal" id="entry-snap" class="button">Snap Photo</button>
     </div>
    <!--  <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
         <h3 class="heading">Exit Gate</h3>
@@ -94,32 +94,6 @@
         <div class="ml-2">
             <button class="button" id="exit-alert-off">Check</button>
         </div>
-    </div>
-</div>
-
-
-
-<!-- vehicles data -->
-<div class="row m-0 mt-5">
-    <h2 class="mb-2 heading">Vehicles details</h2>
-    <div class="table-responsive">
-        <table class="table table-hover text-center" id="vehicles-data">
-            <thead>
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Vehicle Type</th>
-                <th scope="col">Vehicle Number</th>
-                <th scope="col">Owner Name</th>
-                <th scope="col">Entry Date</th>
-                <th scope="col">Entry Timing</th>
-                <th scope="col">Exit Date</th>
-                <th scope="col">Exit Timing</th>
-                <th scope="col">Phone Number</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
     </div>
 </div>
 

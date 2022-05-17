@@ -3,9 +3,9 @@ from django.db.models.fields import BooleanField
 
 # Create your models here.
 class Members(models.Model):
-    owner = models.CharField(max_length=20,blank=False,null=False,default='member')
-    flat_address = models.CharField(max_length=50,blank=False,null=False,default='abc')
-    car_number = models.CharField(max_length=15,blank=False,null=False,default='abc12', unique=True)
+    owner = models.CharField(max_length=20,blank=False,null=False)
+    flat_address = models.CharField(max_length=50,blank=False,null=False)
+    car_number = models.CharField(max_length=15,blank=False,null=False, unique=True)
     phone_number = models.CharField(max_length=15,blank=True)
     email_id = models.EmailField(blank=True)
     date_added = models.DateField(auto_now_add=False,blank=True,null=True)
@@ -14,8 +14,6 @@ class Members(models.Model):
 
     def __str__(self):
         return self.owner
-
-
 
 class Vehicles(models.Model):
     owner =  models.CharField(max_length=20,blank=False,null=False,default='abc')
