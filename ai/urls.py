@@ -6,10 +6,10 @@ urlpatterns = [
     path('',view.home,name='home'),
 
     # List of all the members of in database
-    path('members',view.members,name='member'),
+    path('members/',view.members,name='member'),
     
     # Scan photo to get vehicle data
-    path('scan',view.scanner,name='scanner'),
+    path('scan/',view.scanner,name='scanner'),
 
     # Get vehicle details
     # Not working now

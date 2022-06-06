@@ -107,7 +107,18 @@ def get_image(request):
 
     print("\n\n Ab to chle ja \n\n")
     text = "Displaying article Number"
-    return render(request,'ai/members.html')
+    number_platee = 'dafiosfoi3243'
+    # return register_new_user(request, number_platee)
+
+
+
+
+    return redirect('member')
+
+
+
+
+
 
     print("\n\n After redirect\n\n")
 
