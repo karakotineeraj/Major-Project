@@ -60,46 +60,8 @@
             fetch(url)
             .then((resp)=>resp.json())
             .then((data)=>{
-                console.log('Data:',data)
-                let list = data
-                let sn = 0 
-                let vehicle_type = '🚗'
-                for(let i=0; i<list.length;i++){
-                    // try{
-                    //     document.getElementById(`data-row=${i}`).remove()
-                    // }
-                    // catch(err){
-
-                    // }
-                    console.log(list[i])
-                    sn = i+1
-                    vehicle_type = '🚗'
-                    if(!list[i].four_wheeler){
-                        vehicle_type = '🏍️'
-
-                    }
-                    let car = `
-                        <tr id=" data-row-${i}" class="text-center member-vehicle-${list[i].member}">
-                            <td>${sn}</td>
-                            <td>${vehicle_type}</td>
-                            <td>${list[i].car_number}</td>
-                            <td>${list[i].owner}</td>
-                            <td>${list[i].entry_date}</td>
-                            <td>${list[i].entry_timing}</td>
-                            <td>${list[i].exit_date}</td>
-                            <td>${list[i].exit_timing}</td>
-                            <td><a href="tel:${list[i].phone_number}">${list[i].phone_number}</a></td>
-                        </tr>
-                    `
-                    table.innerHTML+=car;
-                }
-
-                if(vehicles_list.length > list.length){
-                    for(let i=list.length;i<vehicles_list.length;i++){
-                        document.getElementById(`data-row-${i}`).remove()
-                    }
-                }
-                vehicles_list = list
+                console.log('Data:',data);
+                window.location('https://google.com/');
             })
             
         }
@@ -153,18 +115,8 @@
             })
             .then((resp)=>resp.json())
             .then((data)=>{
-                console.log(data)
-                if(!data['permission']){
-                    console.log('visitors')
-                    document.getElementById('enter').click()
-                    document.getElementById('entry-alert').style.display='flex'
-                    document.getElementById('alert-sound').play()
-                    
-                    document.getElementById('car-number').value = data['number']
-                }
-                else{
-                    add_members_entry(data['number'])
-                }
+                console.log(data);
+                location.replace(`/after/${data['number']}/`);
             })
 
         }

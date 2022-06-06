@@ -95,37 +95,12 @@ def get_image(request):
                 'OCREngine':2,
                 'base64Image':data['img']
             }
+    print(data['img'][:20])
     r = requests.post('https://api.ocr.space/parse/image',
     data=payload,
     )
 
-
-    print(r.content.decode())
-    number = json.loads(r.content.decode())
-    number_plate = number['ParsedResults'][0]['TextOverlay']['Lines'][0]['Words'][0]['WordText']
-    print(" Plate number : " + number_plate)
-
-    print("\n\n Ab to chle ja \n\n")
-    text = "Displaying article Number"
-    number_platee = 'dafiosfoi3243'
-    # return register_new_user(request, number_platee)
-
-
-
-
-    return redirect('member')
-
-
-
-
-
-
-    print("\n\n After redirect\n\n")
-
-    permission = check_member(number_plate)
-
-    print("\n\n Reached Here: Got the number  \n\n")
-    return Response({"permission":permission,"number":number_plate})
+    return Response({"number":"MH48BD7862"})
 
 
 def get_state(number_plate):
@@ -145,7 +120,7 @@ def send_entry_message(number_plate):
     tim = str(time)
     message = "You are Welcome entring at " + tim + " !"
     phone = '+919910139377'
-    send_sms(message, phone)
+    # send_sms(message, phone)
 
 
 def send_exit_message(number_plate):
@@ -154,7 +129,7 @@ def send_exit_message(number_plate):
     tim = str(time)
     message = "You are Leaving at " + tim + " !"
     phone = '+919910139377'
-    send_sms(message, phone)
+    # send_sms(message, phone)
 
 # This function will be called after scanning
 # When we get the number_plate number
