@@ -7,11 +7,10 @@
 * This system is going to benefit the users in various ways starting from a limited budget to a safe and secure environment. This is going to help the admin of society in developing faith and relying on the safety measurements of their society because of highly secure entry system. Also, members will feel free towards the safety of their vehicles and can live a stress-free life.
 
 ## TOOLS & TECHNOLOGY
-Tensorflow mainly used for: Classification, Perception, Understanding, Discovering, Prediction and Creation.
-Python/Django is a high-level Python web framework that enables rapid development of secure and maintainable websites
-Keras used for distributed training of deep learning models.
-NumPy
-HTML/CSS Bootstrap JavaScript
-AWS for hosting platform
-Apache2 : As a Web server, Apache is responsible for accepting directory (HTTP) requests from
+* Tensorflow mainly used for: Classification, Perception, Understanding, Discovering, Prediction and Creation.
+* Python/Django is a high-level Python web framework that enables rapid development of secure and maintainable websites
+* Keras used for distributed training of deep learning models.
+* NumPy HTML/CSS Bootstrap JavaScript
+* AWS for hosting platform
+* Apache2 : As a Web server, Apache is responsible for accepting directory (HTTP) requests from
 Internet users and sending them their desired information in the form of files and Web pages.
